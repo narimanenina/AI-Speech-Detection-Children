@@ -1,6 +1,6 @@
+tensorflow
 streamlit
-pandas
-SpeechRecognition
+numpy
+scipy
 librosa
-soundfile
-streamlit-mic-recorder
+sounddevice
