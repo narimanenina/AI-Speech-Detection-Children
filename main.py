@@ -21,7 +21,7 @@ n_mfcc = params['n_mfcc']
 # تحميل النموذج المدرب وإعادة تجميعه
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model('cnn_Speech.hdf5')
+    model = tf.keras.models.load_model('speech_model.keras')
     model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
     return model
 
@@ -118,6 +118,7 @@ if st.button("prediction"):
             st.error(f"An error occurred while processing the audio: {e}")
     else:
         st.error("Please record the audio or upload the audio file first.")
+
 
 
 
