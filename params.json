@@ -1,0 +1,9 @@
+{
+    "max_len": 100,
+    "n_mfcc": 40,
+    "classes": {
+        "Normal": 0,
+        "Stuttering": 1,
+        "Dysarthria": 2
+    }
+}
